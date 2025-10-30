@@ -1,7 +1,38 @@
-html
+@charset "UTF-8";
 
-/* ----- RESETTING ----- */
-/* Remove default margin and padding from all relevant elements and set box-sizing to border-box */
+/* --- Global style rules --- */
+html {
+    font-size: 16px;
+}
+
+/* I am going with simplicity with my color palette, because that has always been my style. */
+/* Easy to navigate colors that are not too bright, soft reds and whites */
+:root {
+    /* Text colors */
+    --text-dark: #141414;
+    --text-middle: #5a5a5a;
+    --text-light: white;
+
+    /* Background colors */
+    --page-background: #fff3f3;
+    --header-background: #ffe8e8;
+    --card-background: white;
+
+    /* Navigation colors */
+    --nav-background: red;
+
+    /* Border color */
+    --line: #f0caca;
+
+    /* Hover color */
+    --hover-background: #f9c9c9;
+
+    /* Buttons */
+    --button: red;
+    --button-hover: darkred;
+}
+
+/* A reset */
 /* In the previous essay, I used *, *::before, *::after, which I personally think is smoother than adding to the long list of elements here.
 /* However, I wanted to try something different this time to show another way to do it.*/
 html,
@@ -27,7 +58,8 @@ textarea {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: var(--text-dark);
+    background-color: var(--page-background);
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1100px) 1fr;
     grid-template-rows: min-content min-content auto min-content;
@@ -74,7 +106,7 @@ h3 {
 
 nav {
     grid-area: nav;
-    background-color: red;
+    background-color: var(--nav-background);
 }
 
 nav ul {
@@ -87,38 +119,39 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--text-light);
+    background-color: transparent;
     padding: 6px 10px;
     transition: background-color 0.2s, color 0.2s;
 }
 
 nav a:hover {
-    background-color: rgba(255, 253, 253, 0.8);
-    color: black;
+    background-color: var(--hover-background);
+    color: var(--text-dark);
 }
 
 nav a.thisPage {
-    background-color: rgba(0, 0, 0, 0.7)
+    background-color: var(--card-background);
+    color: var(--text-dark);
 }
 
 /* ----- HEADER ----- */
 header {
     grid-area: header;
-    background-color: blue;
+    background-color: var(--header-background);
     text-align: center;
     padding: 8px;
 }
 
 header h2 {
-    color: lightgray;
+    color: var(--text-middle);
     font-size: 1.1rem;
 }
 
 /* ----- MAIN ----- */
 main {
     grid-area: main;
-    background-color: darkgrey;
+    background-color: var(--page-background);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -126,9 +159,9 @@ main {
 }
 
 main section {
-    background-color: lightgrey;
+    background-color: var(--card-background);
     padding: 15px;
-    border: 2px solid black
+    border: 1px solid var(--line);
 }
 
 
@@ -136,15 +169,15 @@ main section {
 /* ----- ASIDE ----- */
 aside {
     grid-area: aside;
-    background-color: green;
+    background-color: var(--header-background);
     padding: 15px;
 }
 
 aside section {
-    background-color: darkgreen;
+    background-color: var(--card-background);
     padding: 15px;
     margin-bottom: 10px;
-    border: 2px solid black
+    border: 1px solid var(--line);
 }
 
 aside li {
@@ -154,7 +187,8 @@ aside li {
 /* ----- FOOTER ----- */
 footer {
     grid-area: footer;
-    background-color: pink;
+    background-color: var(--nav-background);
+    color: var(--text-light);
     text-align: center;
     font-size: 0.9rem;
 }
@@ -173,7 +207,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 3px solid white;
+    border: 1px solid var(--line);
 }
 
 .collage img:nth-child(1),
@@ -196,14 +230,13 @@ footer {
     width: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid white;
+    border: 2px solid var(--line);
 }
 
 /* ----- Forms ----- */
 form {
     max-width: 450px;
     margin: auto;
-    /* Center the form */
 }
 
 fieldset,
@@ -211,8 +244,10 @@ input,
 textarea {
     margin-bottom: 8px;
     padding: 8px;
-    border: 1px solid black;
+    border: 1px solid var(--line);
     width: 100%;
+    background-color: var(--card-background);
+    color: var(--text-dark);
 }
 
 legend {
@@ -232,14 +267,14 @@ input[type="checkbox"] {
 input[type="submit"] {
     display: block;
     width: 100%;
-    background-color: black;
+    background-color: var(--button);
     color: white;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 input[type="submit"]:hover {
-    background-color: gray;
+    background-color: var(--button-hover);
 }
 
 @media screen and (max-width: 800px) {
@@ -297,24 +332,24 @@ input[type="submit"]:hover {
         flex-direction: column;
         padding: 0;
         gap: 2px;
-        background-color: lightgray;
+        background-color: var(--card-background);
     }
 
     #globalnav a {
         display: block;
-        background-color: lightgray;
-        color: black;
+        background-color: var(--card-background);
+        color: var(--text-dark);
     }
 
     #globalnav a:hover {
-        background-color: gray;
+        background-color: var(--hover-background);
         border-radius: 0;
     }
 
 
     /* Local navigation in the program-related pages */
     #locnav {
-        background-color: red;
+        background-color: var(--nav-background);
         padding: 8px 12px;
     }
 
@@ -331,5 +366,6 @@ input[type="submit"]:hover {
         width: 100%;
         padding: 10px;
         text-align: center;
+        color: var(--text-light);
     }
 }
