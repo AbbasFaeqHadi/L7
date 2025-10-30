@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - ImmersiLang</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="globalnav">
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="checkbox" id="menucheckbox">
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Checkout</h1>
+        <h2>ImmersiLang Program</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Your order</h3>
+            <p>Product: Full access to <em>ImmersiLang Program</em>
+            </p>
+            <p>Total: 200 kr</p>
+            <p>After your payment you will get an email with a secure link and login details.</p>
+            <p>The program is web-based. You can start today.</p>
+            <p>Train your ear. Speak daily. Build real flow.</p>
+        </section>
+
+        <section>
+            <h3>Billing details</h3>
+            <form name="orderForm" method="post">
+                <fieldset>
+                    <legend>Billing address</legend>
+                    <label for="fullname">Full name:</label>
+                    <input id="fullname" name="fullname" type="text" required>
+
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="country">Country:</label>
+                    <input id="country" name="country" type="text" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Card information</legend>
+                    <label for="card">Card number:</label>
+                    <input id="card" name="card" type="text" placeholder="1234 5678 9012 3456" required>
+
+                    <label for="exp">Expiry (MM/YY):</label>
+                    <input id="exp" name="exp" type="text" placeholder="MM/YY" required>
+
+                    <label for="cvc">CVC:</label>
+                    <input id="cvc" name="cvc" type="text" placeholder="123" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <label>
+                        <input type="checkbox" required>
+                        I accept the Pricing & Terms
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Complete purchase">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ImmersiLang</p>
+    </footer>
+</body>
+
+</html>
