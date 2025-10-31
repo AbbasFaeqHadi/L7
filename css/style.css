@@ -5,35 +5,29 @@ html {
     font-size: 16px;
 }
 
-/* I am going with simplicity with my color palette, because that has always been my style. */
-/* Easy to navigate colors that are not too bright, soft reds and whites */
+/* My final color palette for this website */
+/* Easy to navigate colors that are not too bright, soft reds and whites. */
 :root {
-    /* Text colors */
-    --text-dark: #141414;
-    --text-middle: #5a5a5a;
-    --text-light: white;
+  --text-dark: #12090b;
+  --text-middle: #6d5a5e;
+  --text-light: #fff;
 
-    /* Background colors */
-    --page-background: #fff3f3;
-    --header-background: #ffe8e8;
-    --card-background: white;
+  --page-background: #fff7f8;
+  --header-background: #ffd9e0;
+  --card-background: #fff0f3;;
+  --aside-background: #f3a4b3;
 
-    /* Navigation colors */
-    --nav-background: red;
+  --nav-background: #a93b4a;
 
-    /* Border color */
-    --line: #f0caca;
+  --line: #e8c6ce;
+  --hover-background: #ffe6ea;
 
-    /* Hover color */
-    --hover-background: #f9c9c9;
-
-    /* Buttons */
-    --button: red;
-    --button-hover: darkred;
+  --button: #a5162c;
+  --button-hover: #7f1122;
 }
 
 /* A reset */
-/* In the previous essay, I used *, *::before, *::after, which I personally think is smoother than adding to the long list of elements here.
+/* In the previous assignment, I used *, *::before, *::after, which I think is smoother than adding to the long list of elements here. */
 /* However, I wanted to try something different this time to show another way to do it.*/
 html,
 body,
@@ -80,7 +74,7 @@ body {
         "footer footer footer footer";
 }
 
-/* A unified border-radius on the elemets that looks better with it */
+/* A unified border-radius on the elemets that look better with it */
 /* This can also be achieved by adding a class to all relevant elements, e.g. class="roundedCorners" */
 nav a,
 main section,
@@ -95,7 +89,7 @@ aside section,
 }
 
 h3 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /* ----- NAVIGATION ----- */
@@ -169,7 +163,7 @@ main section {
 /* ----- ASIDE ----- */
 aside {
     grid-area: aside;
-    background-color: var(--header-background);
+    background-color: var(--aside-background);
     padding: 15px;
 }
 
@@ -367,5 +361,10 @@ input[type="submit"]:hover {
         padding: 10px;
         text-align: center;
         color: var(--text-light);
+    }
+
+    #locnav a.thisPage {
+        background-color: var(--card-background);
+        color: var(--text-dark);
     }
 }
