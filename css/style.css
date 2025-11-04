@@ -2,10 +2,10 @@
 
 /* --- Global style rules --- */
 html {
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* Color palette: soft colors with red shades and whitish background*/
+/* Color palette: soft colors with red shades and whitish background */
 :root {
     --text-dark: #12090b;
     --text-middle: #6d5a5e;
@@ -287,6 +287,11 @@ input[type="submit"]:hover {
 
 /* ----- RESPONSIVE DESIGN ----- */
 @media screen and (max-width: 800px) {
+
+    html {
+        font-size: 12.5px;
+    }
+
     body {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -309,6 +314,10 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 460px) {
 
+    html {
+        font-size: 11px;
+    }
+
     /* Hamburger menu in the global navigation is inspired by the example code in lab6 */
     #menuicon {
         background-image: url(../img/menuicon.png);
@@ -329,7 +338,7 @@ input[type="submit"]:hover {
         transform: translateY(0px);
     }
 
-    /* Note the enclosing div for ul is positioned absolute*/
+    /* Note the enclosing div for ul is positioned absolute */
     #globalnav>div {
         position: absolute;
         overflow: hidden;
