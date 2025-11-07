@@ -49,79 +49,278 @@
     <main>
         <section>
             <h2>1. Syfte och målgrupp</h2>
-            <p>I uppgiften skapades en webbplats för ...
-                <!-- Ange vad det är för företag eller annan organisation. -->
+            <p>
+                En webbplats skapades för ImmersiLang, vilket är ett påhittat företag som erbjuder ett
+                språkprogram baserat på immersion. Syftet är att förklara metoden kort, bygga förtroende med berättelser
+                från tidigare kunder (se stories.html), göra det möjligt att kontakta företaget enkelt via formulär (se
+                contact.html) och underlätta köp via en tydlig betalningssida (se checkout.html). Detta följer
+                Strategy-planet där man tidigt sätter produktmål, "brand" identitet och mätbara mål
+                (Garrett, 2011, s. 38), samt definierar "success metrics" för att veta när målen är uppfyllda (Garrett,
+                2011, s. 39).
             </p>
-            <p>Syfte med webbplatsen är ...
-                <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
-                <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
+            <p>
+                Målgruppen är vuxna mellan 20 och 45 år som har provat traditionell språkundervisning men inte fått flyt
+                i språket än. Webbplatsenvänder sig även till personer som vill förbättra flyt för karriär
+                och resor. Valet av målgrupp bygger på identifierade user needs och en tydlig "user segmentation" där
+                den
+                huvudsakliga gruppen är vuxna som vill bli flytande i språket efter misslyckat försök med glosor och
+                grammatikstudier, samt en sekundär grupp som behöver bättre språkbehärskning för jobbet eller resor
+                (Garrett, 2011, s. 42-43).
             </p>
-            <p>Målgruppen består av ...
-                <!-- Fyll på med beskrivning som identifierar målgruppen. -->
-                <!-- Ange också eventuell uppdelning i delgrupper. -->
-            </p>
+
             <h3>Användarnas behov</h3>
-            <!-- Skriv korta punkter som beskriver vilka behov webbplatsen ska uppfylla. -->
-            <!-- Altså resultatet av målgruppsanalysen. Beskrivning av hur du gjort analysen ska inte finnas med. -->
             <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Snabb överblick av metoden och vad som skiljer den från andra undervisningsformer.</li>
+                <li>Korta recensioner av tidigare kunder med bild, namn, landursprung och citat för att skapa
+                    förtroende.</li>
+                <li>Ett kort formulär för eventuella frågor före köp eller kundservice.</li>
+                <li>Tydliga sidor för pris och köpvillkor med information om kostnad, paketinnehåll och steg efter köp.
+                </li>
+                <li>Responsiv design för mobil, surfplatta och desktop.</li>
+                <li>Korta texter med försäljningsteknik för att fånga uppmärksamhet.</li>
             </ul>
         </section>
+
         <section>
             <h2>2. Kravspecifikation</h2>
-            <!-- Kravspecifikationen ska vara utformad enligt Garretts modell på det sätt som visas i föreläsningar och laboration. -->
+
             <h3>Innehåll</h3>
-            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
             <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Startsida med hero-bild och minst två korta stycken som förklarar metod samt länk till
+                    programmet som marknadsförs.</li>
+                <li>Programsida med avsnitt för överblick, programmets innehåll, priser/köpvillkor och länk till
+                    checkout i varje avsnitt.</li>
+                <li>Sida för kundberättelser med minst två recensioner med profilbild, namn, ursprung och ett kort citat
+                    från tidigare kund.</li>
+                <li>Kontaktsida med formulärfält för namn, e-post och meddelande.</li>
+                <li>Betalningssida med ordersammanfattning och en kort text om vad som sker efter betalning. Det ska
+                    finnas fält för namn, e-post, land och betalningsuppgifter.</li>
+                <li>Footer med copyright och företagsnamn på alla sidor.</li>
+                <li>En enhetlig färgpalett som representerar företagets identitet och återkommer i knappar, header,
+                    footer, sektioner och bakgrund.</li>
+                <li>Hero-bilden ska använda ett picture-element för att byta källa mellan mobil, surfplatta och desktop
+                </li>
             </ul>
+
             <h3>Funktion</h3>
-            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
             <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Användaren ska kunna navigera mellan alla sidor via den globala menyn och växla mellan avsnitten i
+                    program-avdelningen via lokal meny utan att hen går vilse.</li>
+                <li>Användaren ska kunna gå från startsidan till programmet och vidare till checkout med hjälp av
+                    tydliga call-to-action-knappar.</li>
+                <li>Korsreferenser i innehållet ska gå att följa, till exempel länkarna i startsidans huvudinnehåll.
+                </li>
+                <li>Formulär ska inte kunna skickas utan att alla obligatoriska fält är ifyllda.</li>
+                <li>Webbplatsen ska anpassas sig till skärmbredd från 350 px och uppåt.</li>
+                <li>Hamburgermenyn ska kunna öppnas och stängas vid klick i mobilvy.</li>
+                <li>Formulärfälten ska använda korrekta inputtyper, till exempel type="email" för e-post och type="text"
+                    för namn och land.</li>
             </ul>
         </section>
+
         <section>
             <h2>3. Beskrivning av arbetet</h2>
-            <!-- Beskriv hur du arbetat med uppgiften. -->
-            <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
-            <p>...</p>
+
+            <h3>3.1 Strategy plane</h3>
+            <p>
+                Jag satte mål för produkten som kopplar företagets identitet till den upplevelse besökaren får
+                på webbplatsen. Det handlar inte bara om logotyp och färg, utan vilket intryck användaren tar med sig
+                efter att hen interagerat med webbplatsen. Att tydliggöra "brand identity" är centralt (Garrett, 2011,
+                s.
+                38) och att definiera "success metrics" hjälper mig mäta om upplevelsen når målen (Garrett, 2011, s.
+                39).
+            </p>
+            <p>
+                Användarbehoven identifierades utifrån målgruppen (andraspråkinlärare) och vad de vill uppnå med besöket
+                (fördjupa sina språkkunskaper). Jag prioriterade behov som
+                är kritiska för att uppfylla målen, till exempel enkel navigering och lättläst och direkt information
+                utan omsvep om vad som erbjuds i webbplatsen.
+            </p>
+
+            <h3>3.2 Scope plane</h3>
+            <p>
+                I ovanstående kraven dokumenterade jag kort och konkret enligt "Writing it down"-principen
+                (Garrett, 2011, s. 69) och använde "content requirements" för att klargöra vilket innehåll som ska
+                finnas med
+                (Garrett, 2011, s. 71). Kraven är skrivna för att vara mätbara och lätta att bocka av. Det följer syftet
+                med Scope-planet att tidigt ringa in vad som ska byggas och vad som inte ska byggas (Garrett, 2011, s.
+                58–60). Jag har använt funktionella specifikationer som är tillräckligt specifika och positiva (Garrett,
+                2011, s. 68–69)
+                samt innehållskrav för att anpassa innehållet efter användarnas förutsättningar (Garrett, 2011, s.
+                74). Till exempel är språket i webbplatsen kortfattat och lättläst för att passa målgruppen, det vill
+                säga andraspråkstalare som inte behärskar målspråket på avancerad nivå.
+            </p>
+
+            <h3>3.3 Structure plane</h3>
+            <p>
+                Först så skissade jag en såkallad sitemap för att organisera innehållet från startsida till köp. Garrett
+                (2011, s. 88–89)
+                beskriver att det är i structure-planet som informationsarkitektur och interaktionsflöden kopplas
+                ihop. Här handlar det om att skapa en logisk väg för användaren och minimera att hen behöver
+                tänka för mycket på vad hen ska göra i nästa steg. Jag
+                följde konventioner för hur en online shop är uppbyggd med en produktbeskrivning som
+                leder vidare till betalningssidan (checkout). Felhantering planerades enligt principerna "prevention,
+                correction och recovery" genom att använda HTML:s inbyggda validering med
+                attributet required, som hindrar användaren från att skicka ofullständiga formulär (Garrett, 2011, s.
+                87).
+            </p>
+
+
+            <h3>3.4 Skeleton plane</h3>
+            <p>
+                Jag valde ett gränssnitt med global navigering högst upp på sidan som på de flesta webbplatser och
+                kompletterade med en lokal meny på programsidans huduvddel. Garrett (2011, s. 118–121) beskriver att
+                navigationens uppgift är att både visa vägen och orientera användaren. Global navigation ger användaren
+                åtkomst till alla huvuddelar av webbplatsen var än användaren befinner sig. Den lokala menyn på
+                programsidan följer Garretts
+                beskrivning av lokal navigation, som visar vad som hör ihop i strukturen. I detta fall visar lokal
+                navigation relaterade
+                delar av programinformationen. Jag har använt mig av vad Garret (2011, s. 127) kallar "wayfinding" genom
+                att markera aktuell sida som användaren befinner sig i med en annan stil än övriga länkar. Detta hjälper
+                användaren att förstå
+                var hen befinner sig på webbplatsen.
+            </p>
+
+            <p>
+                Jag skapade wireframes med ett gridsystem där varje sektion fick en egen kontrastfärg för att skilja
+                sektionerna åt visuellt. Sen använde jag placeholder-bilder och anpassade layouten för olika
+                skärmstorlekar för att kunna justera placeringar och proportioner av olika element innan stilen
+                bestämdes.
+                Wireframes hör hemma på Skeleton-planet och binder ihop sidolayouten med navigeringen, gränsnittet och
+                informationsdesignen (Garrett, 2011, s. 131).
+            </p>
+
+            <h3>3.5 Surface plane</h3>
+            <p>
+                Jag styrde användarens uppmärksamhet på startsidan genom hero-bilden, stora rubriker och
+                call-to-action-knappar. Till exempel
+                användes färgglada stora knappar som leder till programsidan och recensioner. Garrett beskriver att det
+                är viktigt
+                att veta hur man följer blicken på surface-planen enligt principen "Follow the Eye" (Garrett, 2011, s.
+                137).
+                Jag såg till att det fanns kontrast i knappar och länkar enligt Contrast and Uniformity för läsbarhet
+                och igenkänning
+                (Garrett, 2011, s. 139). Dessutom höll jag mig konsekvent till färgpaletten och typografin
+                för att stödja
+                företagsidentiteten och enhetligheten i designen (Garrett,
+                2011, s. 139, 145). Precis som Garrett (2011, s. 138) beskriver, handlar det om att kunna kisa med
+                ögonen
+                och fortfarande see webbplatsens dominerande former, färger och det som fångar användarens
+                uppmärksamhet.
         </section>
+
+        <h3>Sammanfattning</h3>
+        <p>
+            Webbplatsen har följt Garretts fem plan från strategy till surface. Jag började med att definiera
+            mål och målgrupp, formulerade konkreta och testbara krav, byggde en logisk struktur och navigering, skapade
+            wireframes för layout och avslutade med att utforma en enhetlig visuell stil med fokus på kontrast, färg och
+            tydliga knappar. Varje plan har bidragit till att skapa en webbplats som är användarvänlig, konsekvent och
+            representerar företagets identitet.
+        </p>
+
         <section>
             <h2>4. Bilder</h2>
-            <!-- Beskriv i en punktlista vilka redigeringar du gjort av bilderna i ett bildredigeringsprogram, för att anpassa dem till hur du använder dem på din webbplats. -->
-            <p>Bilderna har redigerats i ett bildredigeringsprogram, där följande gjorts:</p>
+            <p>Bilderna har redigerats i Pixlr och anpassats för webben enligt följande:</p>
             <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Källa: Pixabay med gratis bilder. Varje bild har beskrivande alt-text.</li>
+                <li>Storlek: beskurna och skalade till passande mått. Till exempel finns hero-bilden med i tre varianter
+                    för mobil,
+                    surfplatta och desktop. Mobilens hero zoomar in ansikten för det är det mest väsentliga i bilden
+                    medan bilden för surfplatta är en mellanvariant som är mer avlång då det finns ytrymme för det.
+                    Desktop visar en panorama för vi har mer horistonell yta till vårt förfogande.</li>
+                <li>Färg och kontrast: lite röd ton via "Hue och Saturation" i Pixlr för att passa färgpaletten.</li>
+                <li>Format: JPG för foton, PNG för hamburgarmenyn och SVG för favicon.</li>
+                <li>Komprimering: balans mellan låg filstorlek och inte för synbar kvalitéförlust.
+                </li>
             </ul>
-            <!-- För VG anger du också var på din webbplats du använt dig av picture-elementet. Har du använt det på flera ställen, duplicerar du textstycket. -->
-            <!-- Om du inte gjort VG-kravet, tar du bort nedanstående stycke. -->
-            <p>Picture-elementet används på sidan ... för bilden ...</p>
+            <p>
+                Elementet &lt;picture&gt; användes på index.html för hero-bilden i headern. Källan till bilderna byts ut
+                automatiskt så
+                att vi får en "inzoomad" mobilversionen, en avlång mellanvariant på medelstora skärmar och en
+                desktopversion som visar en bild med "landscape" ratio.
+            </p>
         </section>
+
         <section>
             <h2>5. Utvärdering mot kravspecifikationen</h2>
-            <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
+
+            <h3>Innehåll</h3>
+            <ul>
+                <li>Startsida med hero och minst två korta stycken som förklarar metoden samt länk till programmet:
+                    Uppfyllt. Filen index.html har en
+                    herobild i headern och färgglada knappar som leder till programmet och recensionerna, samt tre korta
+                    stycken i main.</li>
+                <li>Programsida med överblick, innehåll, priser/köpvillkor samt länk till betalningssidan i varje
+                    avsnitt:
+                    Uppfyllt. Undersidorna nås via lokal meny i huvudinnehållet och varje avsnitt länkar till
+                    checkout.html.
+                </li>
+                <li>Sida för kundberättelser med två recensioner med bild, namn, ursprung och citat: Uppfyllt. Två
+                    profiler med profilbild, ursprungsland och kort citat.</li>
+                <li>Kontaktsida med namn, e-post och meddelande: Uppfyllt. Fälten finns och används i contact.html.</li>
+                <li>Betalningssida med ordersammanfattning, kunduppgifter och betalningsuppgifter samt information om
+                    vad som
+                    sker efter betalning: Uppfyllt. Sidan innehåller produktsammanfattning, steg efter köp, pris,
+                    fält för namn, e-post, land och kortuppgifter.</li>
+                <li>Footer på alla sidor: Uppfyllt. Footer med företagsnamn finns konsekvent.</li>
+                <li>Enhetlig färgpalett som representerar identiteten: Uppfyllt. Samma palett används i hela
+                    webbplatsen.</li>
+                <li>Hero med picture-element för olika skärmstorlekar: Uppfyllt. Källor byts för mobil, surfplatta och
+                    desktop för en responsiv design.</li>
+            </ul>
+
+            <h3>Funktion</h3>
+            <ul>
+                <li>Global och lokal navigering: Uppfyllt. Global meny överst på alla sidor och lokal meny i
+                    program-avdelningen för växling mellan undersidor. Aktuell sida markeras.</li>
+                <li>Flödet via call-to-action från startsida till program och sedan till checkout: Uppfyllt. Primär
+                    knapp i headern leder vidare till programmet, vilket i sin tur länkar till checkout.</li>
+                <li>Korsreferenser i innehållet: Uppfyllt. Länkar i form av knappar i text samt även knappar i headern
+                    leder till sidor
+                    som program, stories och kontakt.</li>
+                <li>Validering av obligatoriska fält i formulär: Uppfyllt. required-attributet används i contact.html
+                    och checkout.html.</li>
+                <li>Responsiv design från 350 px och uppåt: Uppfyllt. Picture-elementet, media queries och grid anpassar
+                    layouten för mobil, surfplatta och desktop.</li>
+                <li>Hamburgermeny i mobil: Uppfyllt. Menyn öppnas och stängs vid klick.</li>
+                <li>Korrekt användning av inputtyper: Uppfyllt. Till exempel har e-post type="email" medan namn och land
+                    type="text".</li>
+            </ul>
         </section>
+
         <section>
             <h2>6. Användartest</h2>
-            <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
-            <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
-            <!-- Beskriv hur du genomförde användartestet. Ange vilka brister du upptäckte och hur du åtgärdat dem. -->
-            <p>...</p>
+            <h3>- med metoden Tänka högt</h3>
+            <p>
+                Jag testade tre användare: två i mobil och en i desktop. Problemet som upptäcktes var att det var för
+                stor
+                text i mobil och surfplatta, särskilt i liggande läge.
+                Det åtgärdades med en regel för html {} i CSS-koden. Jag uppdaterade root fontstorleken med media query
+                under
+                800px.
+                Testpersonerna tyckte att det var lätt att navigera och hitta information. De uppskattade korta meningar
+                och att headern med hero och call to action gjorde det enkelt att ta sig till programmet och vidare till
+                kassan.
+            </p>
+            <p>
+                Dock hade testpersonerna lite svårt att hitta till kassan, så jag återanvände stilen för första
+                knappen i headern och lade till det till alla länkar som leder till checkout.html för att göra det
+                lättare att hitta. Det var klassen .primary-btn
+                som återanvändes med hög kontrast mot omgivningen, vilket gör dem lättare att upptäcka, i linje med
+                "contrast" och "uniformity" hos Garrett (2011, s. 139).
+            </p>
         </section>
+
         <section>
             <h2>Källförteckning</h2>
-            <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
-            <!-- Skriv en källförteckning enligt Harvardsystemet för de källor du refererat till i din text. Det ska åtminstone vara Garretts bok. -->
-            <p>...</p>
+            <p>
+                Garrett, J. J. (2011) <i>The Elements of User Experience: User-Centered Design for the Web and
+                    Beyond</i>. 2nd edn. New Riders.
+            </p>
+            <p>
+                Körnefors, R. och Andersson, N. (2025) Webbteknik 1. [Online course material]. Linnaeus University.
+                Hämtad 4 november 2025.
+            </p>
         </section>
     </main>
 </body>

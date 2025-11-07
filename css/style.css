@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-/* --- Global style rules --- */
+/* --- GLOBAL STYLES --- */
 html {
     font-size: 15px;
 }
 
-/* Color palette: soft colors with red shades and whitish background */
+/* Color palette: soft colors with red shades and pale background */
 :root {
     --text-dark: #12090b;
     --text-middle: #6d5a5e;
@@ -127,7 +127,7 @@ nav a.thisPage {
     color: var(--text-dark);
 }
 
-/* ----- HEADER AND HERO ----- */
+/* ----- HEADER ----- */
 header {
     grid-area: header;
     background: var(--header-background);
@@ -169,18 +169,19 @@ header p {
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s;
-    margin: 0 0 8px 0;
+    margin: 0 4px 0 0;
 }
 
 
 .primary-btn {
     background-color: var(--button);
-    color: var(--text-light)
+    color: var(--text-light);
 }
 
 .secondary-btn {
     background-color: var(--aside-background);
     color: var(--text-light);
+    margin-bottom: 0;
 }
 
 .primary-btn:hover,
@@ -231,7 +232,9 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ----- Profile picture for the stories page ----- */
+/* ----- ADDITIONAL STYLES ----- */
+
+/* Profile picture for the stories page */
 .profilepic {
     display: block;
     width: 100px;
@@ -240,7 +243,7 @@ footer {
     border: 2px solid var(--line);
 }
 
-/* ----- Forms ----- */
+/*Forms */
 form {
     max-width: 450px;
     margin: auto;
@@ -376,6 +379,7 @@ input[type="submit"]:hover {
     }
 
     #locnav a {
+        font-size: 1.1rem;
         display: block;
         width: 100%;
         padding: 10px;
