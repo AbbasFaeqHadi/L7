@@ -54,13 +54,13 @@
                 språkprogram baserat på immersion. Syftet är att förklara metoden kort, bygga förtroende med berättelser
                 från tidigare kunder (se stories.html), göra det möjligt att kontakta företaget enkelt via formulär (se
                 contact.html) och underlätta köp via en tydlig betalningssida (se checkout.html). Detta följer
-                Strategy-planet där man tidigt sätter produktmål, "brand" identitet och mätbara mål
+                Strategy-planet där man tidigt sätter produktmål, en varumärkesidentitet och mätbara mål
                 (Garrett, 2011, s. 38), samt definierar "success metrics" för att veta när målen är uppfyllda (Garrett,
                 2011, s. 39).
             </p>
             <p>
                 Målgruppen är vuxna mellan 20 och 45 år som har provat traditionell språkundervisning men inte fått flyt
-                i språket än. Webbplatsenvänder sig även till personer som vill förbättra flyt för karriär
+                i språket än. Webbplatsen vänder sig även till personer som vill förbättra flyt för karriär
                 och resor. Valet av målgrupp bygger på identifierade user needs och en tydlig "user segmentation" där
                 den
                 huvudsakliga gruppen är vuxna som vill bli flytande i språket efter misslyckat försök med glosor och
@@ -71,10 +71,11 @@
             <h3>Användarnas behov</h3>
             <ul>
                 <li>Snabb överblick av metoden och vad som skiljer den från andra undervisningsformer.</li>
-                <li>Korta recensioner av tidigare kunder med bild, namn, landursprung och citat för att skapa
+                <li>Korta recensioner av tidigare kunder med bild, personuppgifter och citat för att skapa
                     förtroende.</li>
                 <li>Ett kort formulär för eventuella frågor före köp eller kundservice.</li>
-                <li>Tydliga sidor för pris och köpvillkor med information om kostnad, paketinnehåll och steg efter köp.
+                <li>Tydliga sidor för pris och köpvillkor med information om kostnad, paketinnehåll och steg efter
+                    betalning.
                 </li>
                 <li>Responsiv design för mobil, surfplatta och desktop.</li>
                 <li>Korta texter med försäljningsteknik för att fånga uppmärksamhet.</li>
@@ -98,8 +99,6 @@
                 <li>Footer med copyright och företagsnamn på alla sidor.</li>
                 <li>En enhetlig färgpalett som representerar företagets identitet och återkommer i knappar, header,
                     footer, sektioner och bakgrund.</li>
-                <li>Hero-bilden ska använda ett picture-element för att byta källa mellan mobil, surfplatta och desktop
-                </li>
             </ul>
 
             <h3>Funktion</h3>
@@ -114,7 +113,8 @@
                 <li>Webbplatsen ska anpassas sig till skärmbredd från 350 px och uppåt.</li>
                 <li>Hamburgermenyn ska kunna öppnas och stängas vid klick i mobilvy.</li>
                 <li>Formulärfälten ska använda korrekta inputtyper, till exempel type="email" för e-post och type="text"
-                    för namn och land.</li>
+                    för namn och land så att webbläsaren förstår vad som matas in</li>
+                <li>Hero-bilden ska ska ändra format baserat på skärmstorlek för en mer responsiv design.</li>
             </ul>
         </section>
 
@@ -231,17 +231,19 @@
                     surfplatta och desktop. Mobilens hero zoomar in ansikten för det är det mest väsentliga i bilden
                     medan bilden för surfplatta är en mellanvariant som är mer avlång då det finns ytrymme för det.
                     Desktop visar en panorama för vi har mer horistonell yta till vårt förfogande.</li>
-                <li>Färg och kontrast: lite röd ton via "Hue och Saturation" i Pixlr för att passa färgpaletten.</li>
+                <li>Färg och kontrast: lite rödare ton via parametrarna "Hue" och "Saturation" i Pixlr för att passa
+                    färgpaletten.</li>
                 <li>Format: JPG för foton, PNG för hamburgarmenyn och SVG för favicon.</li>
-                <li>Komprimering: balans mellan låg filstorlek och inte för synbar kvalitéförlust.
+                <li>Komprimering: balans mellan låg filstorlek och inte för synlig kvalitéförlust.
                 </li>
             </ul>
             <p>
                 Elementet &lt;picture&gt; användes på index.html för hero-bilden i headern. Källan till bilderna byts ut
                 automatiskt så
-                att vi får en inzoomad bild på ansikten i mobilversionen, en avlång mellanvariant på medelstora skärmar
+                att vi får en inzoomad bild på ansikten i mobilversionen, en lite mer avlång mellanvariant på medelstora
+                skärmar
                 och en
-                desktopversion som visar en bild med "landscape" ratio.
+                desktopversion som visar en bild med "landscape"-ratio.
             </p>
         </section>
 
@@ -261,7 +263,7 @@
                 </li>
                 <li>Sida för kundberättelser med två recensioner med bild, namn, ursprung och citat: Uppfyllt. Två
                     profiler med profilbild, ursprungsland och kort citat.</li>
-                <li>Kontaktsida med namn, e-post och meddelande: Uppfyllt. Fälten finns och används i contact.html.</li>
+                <li>Kontaktsida med namn, e-post och meddelande: Uppfyllt. Fälten finns i contact.html.</li>
                 <li>Betalningssida med ordersammanfattning, kunduppgifter och betalningsuppgifter samt information om
                     vad som
                     sker efter betalning: Uppfyllt. Sidan innehåller produktsammanfattning, steg efter köp, pris,
@@ -269,8 +271,6 @@
                 <li>Footer på alla sidor: Uppfyllt. Footer med företagsnamn finns konsekvent.</li>
                 <li>Enhetlig färgpalett som representerar identiteten: Uppfyllt. Samma palett används i hela
                     webbplatsen.</li>
-                <li>Hero med picture-element för olika skärmstorlekar: Uppfyllt. Källor byts för mobil, surfplatta och
-                    desktop för en responsiv design.</li>
             </ul>
 
             <h3>Funktion</h3>
@@ -288,7 +288,10 @@
                     layouten för mobil, surfplatta och desktop.</li>
                 <li>Hamburgermeny i mobil: Uppfyllt. Menyn öppnas och stängs vid klick.</li>
                 <li>Korrekt användning av inputtyper: Uppfyllt. Till exempel har e-post type="email" medan namn och land
-                    type="text".</li>
+                    type="text" så att webbläsaren kan hantera inmatningen bättre. </li>
+                <li>Hero-bilden ska ska ändra format baserat på skärmstorlek: Uppfyllt. Hero i ett picture-element där
+                    bildkällan byts ut för mobil, surfplatta och
+                    desktop för en responsiv design.</li>
             </ul>
         </section>
 
@@ -297,7 +300,8 @@
             <h3>- med metoden Tänka högt</h3>
             <p>
                 Jag testade tre användare: två i mobil och en i desktop.
-                Jag följde föreläsning F9c om metoden tänka högt. Jag förklarade att det är webbplatsen som testas, gav
+                Jag följde föreläsning F9c om metoden tänka högt. Jag förklarade för dem att det är webbplatsen som
+                testas, gav
                 varje
                 testperson ett uppdrag, bad dem säga vad de ser och tänker, observerade och antecknade,
                 och gjorde en uppföljning efteråt. Syftet var att hitta brister och förbättringar, inte att
@@ -317,9 +321,8 @@
                 Dock hade testpersonerna lite svårt att hitta till kassan, så jag återanvände stilen för första
                 knappen i headern och lade till det till alla länkar som leder till checkout.html för att göra det
                 lättare att hitta. Det var klassen .primary-btn
-                som återanvändes med hög kontrast mot omgivningen, vilket gör dem lättare att upptäcka, i linje med
-                Garretts (2011, s. 139)
-                "contrast" och "uniformity".
+                som återanvändes med hög kontrast mot omgivningen, vilket gör det lättare att upptäcka dem, i linje med
+                vad Garrett (2011, s. 139) skriver om "contrast" och "uniformity".
             </p>
         </section>
 
