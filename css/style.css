@@ -232,6 +232,10 @@ footer {
     font-size: 0.9rem;
 }
 
+footer a {
+    color: var(--text-light);
+}
+
 /* ----- ADDITIONAL STYLES ----- */
 
 /* Profile picture for the stories page */
@@ -292,7 +296,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 800px) {
 
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     body {

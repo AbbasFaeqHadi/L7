@@ -207,22 +207,25 @@
                 ögonen
                 och fortfarande see webbplatsens dominerande former, färger och det som fångar användarens
                 uppmärksamhet.
-        </section>
 
-        <h3>Sammanfattning</h3>
-        <p>
-            Webbplatsen har följt Garretts fem plan från strategy till surface. Jag började med att definiera
-            mål och målgrupp, formulerade konkreta och testbara krav, byggde en logisk struktur och navigering, skapade
-            wireframes för layout och avslutade med att utforma en enhetlig visuell stil med fokus på kontrast, färg och
-            tydliga knappar. Varje plan har bidragit till att skapa en webbplats som är användarvänlig, konsekvent och
-            representerar företagets identitet.
-        </p>
+            <h3>3.6 Sammanfattning</h3>
+            <p>
+                Webbplatsen har följt Garretts fem plan från strategy till surface. Jag började med att definiera
+                mål och målgrupp, formulerade konkreta och testbara krav, byggde en logisk struktur och navigering,
+                skapade
+                wireframes för layout och avslutade med att utforma en enhetlig visuell stil med fokus på kontrast,
+                färg och
+                tydliga knappar. Varje plan har bidragit till att skapa en webbplats som är användarvänlig,
+                konsekvent och
+                representerar företagets identitet.
+            </p>
+        </section>
 
         <section>
             <h2>4. Bilder</h2>
             <p>Bilderna har redigerats i Pixlr och anpassats för webben enligt följande:</p>
             <ul>
-                <li>Källa: Pixabay med gratis bilder. Varje bild har beskrivande alt-text.</li>
+                <li>Källa: Pixabay med gratis bilder. Alla bilder har beskrivande alt-text.</li>
                 <li>Storlek: beskurna och skalade till passande mått. Till exempel finns hero-bilden med i tre varianter
                     för mobil,
                     surfplatta och desktop. Mobilens hero zoomar in ansikten för det är det mest väsentliga i bilden
@@ -236,7 +239,8 @@
             <p>
                 Elementet &lt;picture&gt; användes på index.html för hero-bilden i headern. Källan till bilderna byts ut
                 automatiskt så
-                att vi får en "inzoomad" mobilversionen, en avlång mellanvariant på medelstora skärmar och en
+                att vi får en inzoomad bild på ansikten i mobilversionen, en avlång mellanvariant på medelstora skärmar
+                och en
                 desktopversion som visar en bild med "landscape" ratio.
             </p>
         </section>
@@ -292,22 +296,30 @@
             <h2>6. Användartest</h2>
             <h3>- med metoden Tänka högt</h3>
             <p>
-                Jag testade tre användare: två i mobil och en i desktop. Problemet som upptäcktes var att det var för
-                stor
-                text i mobil och surfplatta, särskilt i liggande läge.
-                Det åtgärdades med en regel för html {} i CSS-koden. Jag uppdaterade root fontstorleken med media query
-                under
-                800px.
-                Testpersonerna tyckte att det var lätt att navigera och hitta information. De uppskattade korta meningar
-                och att headern med hero och call to action gjorde det enkelt att ta sig till programmet och vidare till
-                kassan.
+                Jag testade tre användare: två i mobil och en i desktop.
+                Jag följde föreläsning F9c om metoden tänka högt. Jag förklarade att det är webbplatsen som testas, gav
+                varje
+                testperson ett uppdrag, bad dem säga vad de ser och tänker, observerade och antecknade,
+                och gjorde en uppföljning efteråt. Syftet var att hitta brister och förbättringar, inte att
+                bekräfta att allt fungerar (Webbteknik 1 F9c, 2025). Som uppdrag bad jag dem att börja på startsidan, gå
+                till programmet, genomföra ett köp i checkout och sen skicka en fråga via kontaktformuläret. Det
+                täckte hela flödet från första intryck till köp och kontakt.
             </p>
+            <p>
+                Testpersonerna tyckte att det var lätt att
+                navigera och hitta information. De uppskattade korta meningar
+                och att headern med hero och call to action gjorde det enkelt att ta sig till programmet och vidare till
+                kassan. Under användartestet upptäcktes dock att textstorleken för innehållet var för stor i mobil och
+                surfplatta. Det åtgärdades med enbart en
+                regel för html {} i CSS-koden. Jag uppdaterade root fontstorleken med media query
+                under 800px.
             <p>
                 Dock hade testpersonerna lite svårt att hitta till kassan, så jag återanvände stilen för första
                 knappen i headern och lade till det till alla länkar som leder till checkout.html för att göra det
                 lättare att hitta. Det var klassen .primary-btn
                 som återanvändes med hög kontrast mot omgivningen, vilket gör dem lättare att upptäcka, i linje med
-                "contrast" och "uniformity" hos Garrett (2011, s. 139).
+                Garretts (2011, s. 139)
+                "contrast" och "uniformity".
             </p>
         </section>
 
