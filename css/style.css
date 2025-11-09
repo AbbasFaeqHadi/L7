@@ -236,6 +236,10 @@ footer a {
     color: var(--text-light);
 }
 
+footer p {
+    margin: 8px 0;
+}
+
 /* ----- ADDITIONAL STYLES ----- */
 
 /* Profile picture for the stories page */
@@ -278,16 +282,19 @@ input[type="checkbox"] {
     width: 20px;
 }
 
-input[type="submit"] {
+button {
     display: block;
     width: 100%;
     background-color: var(--button);
-    color: white;
+    color: var(--text-light);
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
     transition: background-color 0.2s;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: var(--button-hover);
 }
 
